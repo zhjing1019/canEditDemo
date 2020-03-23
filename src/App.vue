@@ -2,16 +2,21 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <br>
+    <more-tree></more-tree>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import MoreTree from './components/MoreTree.vue'
+
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld,
+    MoreTree
   }
 }
 </script>

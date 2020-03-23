@@ -8,8 +8,9 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "can-edit-table": "^1.0.1",
+    "can-edit-table": "^1.0.5",
     "core-js": "^2.6.5",
+    "more-tree-table": "^0.1.9",
     "vue": "^2.6.10"
   },
   "devDependencies": {
