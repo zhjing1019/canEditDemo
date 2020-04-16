@@ -4,14 +4,14 @@
     <br>
     <more-tree></more-tree>
     <br>
-    <tree-grid></tree-grid>
+    <!-- <tree-grid></tree-grid> -->
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import MoreTree from './components/MoreTree.vue'
-import TreeGrid from './components/TreeGrid.vue'
+// import TreeGrid from './components/TreeGrid.vue'
 
 
 export default {
@@ -19,7 +19,7 @@ export default {
   components: {
     HelloWorld,
     MoreTree,
-    TreeGrid
+    // TreeGrid
   }
 }
 </script>
