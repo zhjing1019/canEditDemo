@@ -169,6 +169,8 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
+<style>
+.hello{
+  padding: 0 40px;
+}
 </style>

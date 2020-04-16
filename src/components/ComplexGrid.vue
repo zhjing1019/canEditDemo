@@ -1,7 +1,7 @@
 <template>
   <div style="padding: 15px; height: 200px">
     <h1>树形结构可支持拖拽的表格（自定义表格td里的内容）</h1>
-    <sum-grid
+    <complex-grid
       ref="treeGrid1"
       :fields="treeGridJson.fields"
       :data.sync="treeGridJson.data"
@@ -19,7 +19,7 @@
       :isDrag="true"
       :isExpandAll="true"
     >
-    </sum-grid>
+    </complex-grid>
     <br />
     <el-row>
       <el-button type="primary" @click="getTreeData('treeGrid1')" plain style="margin-right: 10px"
@@ -29,7 +29,7 @@
     </el-row>
     <br />
     <h1>树形结构表格（可自定义表格内容）</h1>
-    <sum-grid
+    <complex-grid
       ref="treeGrid2"
       :fields="treeGridJson2.fields"
       :data.sync="treeGridJson2.data"
@@ -47,7 +47,7 @@
         <span>{{ field.field.rowData[field.field.field.id] }}</span>
         <img src="./duihao.png" alt="" />
       </template>
-    </sum-grid>
+    </complex-grid>
     <br />
     <el-row>
       <el-button type="primary" @click="getTreeData('treeGrid2')" plain style="margin-right: 10px"
@@ -57,7 +57,7 @@
     </el-row>
     <br />
     <h1>多表头表格展示</h1>
-    <sum-grid
+    <complex-grid
       ref="dataGrid1"
       :fields="dataGrid1.fields"
       :data.sync="dataGrid1.data"
@@ -67,7 +67,7 @@
       :loadState="3"
       style="height: 300px"
     >
-    </sum-grid>
+    </complex-grid>
     <br />
     <el-row>
       <el-button type="primary" @click="getTreeData('dataGrid1')" plain style="margin-right: 10px"
@@ -77,7 +77,7 @@
     </el-row>
     <br />
     <h1>表格为空</h1>
-    <sum-grid
+    <complex-grid
       ref="emptyTable"
       :fields="emptyData.fields"
       :data="emptyData.data"
@@ -87,10 +87,10 @@
       :empty="empty"
       style="height: 400px"
     >
-    </sum-grid>
+    </complex-grid>
     <br />
     <h1>可拖拽排序表格</h1>
-    <sum-grid
+    <scomplex-grid
       ref="dataGrid2"
       :fields="dataGrid2.fields"
       :data.sync="dataGrid2.data"
@@ -110,7 +110,7 @@
         <span>{{ field.field.rowData[field.field.field.id] }}</span>
         <img src="./duihao.png" alt="" />
       </template>
-    </sum-grid>
+    </complex-grid>
     <br />
     <el-row>
       <el-button type="primary" @click="getTreeData('dataGrid2')" plain style="margin-right: 10px"
@@ -120,7 +120,7 @@
     </el-row>
     <br />
 
-    <sum-grid
+    <complex-grid
       ref="dataGrid3"
       :fields="dataGrid3.fields"
       :data.sync="testData"
@@ -151,7 +151,7 @@
           <!-- <svg-icon name="icon-edit" :width="16" :height="14"></svg-icon> -->
         </span>
       </template>
-    </sum-grid>
+    </complex-grid>
     <br />
     <el-row>
       <el-button type="primary" @click="getTreeData('dataGrid3')" plain style="margin-right: 10px"

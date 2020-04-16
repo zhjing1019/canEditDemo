@@ -37,9 +37,8 @@ export default {
 
 <style>
 .more-app{
+  padding: 0 40px;
   width: calc(100vw - 140px);
   height: 400px;
-  
-
 }
 </style>

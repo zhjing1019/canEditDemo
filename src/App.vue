@@ -1,22 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <br>
     <more-tree></more-tree>
+    <br>
+    <tree-grid></tree-grid>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import MoreTree from './components/MoreTree.vue'
+import TreeGrid from './components/TreeGrid.vue'
 
 
 export default {
   name: 'app',
   components: {
     HelloWorld,
-    MoreTree
+    MoreTree,
+    TreeGrid
   }
 }
 </script>
